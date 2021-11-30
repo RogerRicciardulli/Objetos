@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>UNLa</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand">UNLa</a>
+		</div>
+	</nav>
+
+	<header>
+
+	</header>
+	
+	<script>
+		function getParameter(parameterName) {
+			let parameters = new URLSearchParams(window.location.search);
+			return parameters.get(parameterName);
+		}
+		var permiso = getParameter('permiso');
+		var nombre = getParameter('nombre');
+		var apellido = getParameter('apellido');
+		var dni = getParameter('dni');
+		var motivo = getParameter('motivo');
+		var fecha = getParameter('fecha');
+		var lugar = getParameter('lugar');
+		var fecha2 = getParameter('fecha2');
+		var rodado = getParameter('rodado');
+		var vacaciones = getParameter('vacaciones');
+		
+	</script>
+	
+ 
+	<table id="diario" class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">Nombre</th>
+				<th scope="col">Apellido</th>
+				<th scope="col">DNI</th>
+				<th scope="col">Motivo</th>
+				<th scope="col">Fecha</th>
+				<th scope="col">Lugar</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(nombre)
+					</script>
+				</th>
+
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(apellido)
+					</script>
+				</th>
+
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(dni)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(motivo)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(fecha)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(lugar)
+					</script>
+				</th>
+
+			</tr>
+
+		</tbody>
+	</table>
+	
+	<table id="periodo" class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">Nombre</th>
+				<th scope="col">Apellido</th>
+				<th scope="col">DNI</th>
+				<th scope="col">Fecha inicial</th>
+				<th scope="col">Fecha final</th>
+				<th scope="col">Rodado</th>
+				<th scope="col">Vacaciones</th>
+				<th scope="col">Lugar</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(nombre)
+					</script>
+				</th>
+
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(apellido)
+					</script>
+				</th>
+
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(dni)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(fecha)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(fecha2)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(rodado)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(vacaciones)
+					</script>
+				</th>
+				
+				<th scope="row">
+					<script type="text/javascript">
+						document.write(lugar)
+					</script>
+				</th>
+
+			</tr>
+
+		</tbody>
+	</table>
+	
+	
+	
+
+	
+	<script>
+		if(permiso==2){
+		document.getElementById("diario").hidden = true;		
+		}
+		
+		if(permiso==1){
+		document.getElementById("periodo").hidden = true;	
+		}
+	</script>
+	
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	<!-- Footer -->
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; UNLa 2021</p>
+		</div>
+		<!-- /.container -->
+	</footer>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
